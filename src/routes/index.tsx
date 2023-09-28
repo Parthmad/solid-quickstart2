@@ -1,4 +1,10 @@
-async function query(data) {
+import fetch from 'node-fetch';
+
+interface Data {
+    question: string;
+}
+
+async function query(data: Data): Promise<any> {
     const response = await fetch(
         "http://localhost:3000/api/v1/prediction/5209eae0-447d-4e73-83db-64f518b187d9",
         {
