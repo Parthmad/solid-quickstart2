@@ -1,3 +1,5 @@
+
+var parse = require('html-react-parser');parse('<div> text </div>');
 <html>
   <body>
     <script type="module">
